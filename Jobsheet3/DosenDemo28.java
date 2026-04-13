@@ -47,5 +47,18 @@ public class DosenDemo28 {
             System.out.println("-----------------------------------");
             counter++;
         }
-    }
-}
+
+
+        DataDosen28 dataDosen = new DataDosen28(); 
+
+        dataDosen.dataSemuaDosen(arrayOfDosen);
+        dataDosen.jumlahDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.rerataUsiaDosenPerJenisKelamin(arrayOfDosen);
+        dataDosen.infoDosenPalingTua(arrayOfDosen);
+        dataDosen.infoDosenPalingMuda(arrayOfDosen);
+        
+    } 
+} 
+
+        
+
