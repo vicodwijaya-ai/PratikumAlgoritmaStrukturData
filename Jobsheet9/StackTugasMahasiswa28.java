@@ -74,7 +74,20 @@ public class StackTugasMahasiswa28 {
     }
 
     public int getJumlahTugas() {
-    return top + 1; 
-}
+        return top + 1;
+    }
 
+    public String konversiDesimalKeBiner(int nilai) {
+        StackKonversi28 stackKonversi = new StackKonversi28();
+        while (nilai != 0) {   // > awal 
+            int sisa = nilai % 2;
+            stackKonversi.push(sisa);
+            nilai = nilai / 2;
+        }
+        String biner = new String();
+        while (!stackKonversi.isEmpty()) {
+            biner += stackKonversi.pop();
+        }
+        return biner;
+    }
 }
